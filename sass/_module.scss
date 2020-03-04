@@ -1,0 +1,60 @@
+/*
+    モジュール
+*/
+
+.ttl-cmn{
+    font-size: 36px;
+    line-height: 44px;
+    @include sp{
+        font-size: 30px;
+    }
+}
+
+.btn-cmn-cv{
+    background-color: $CvColor;
+    box-shadow: 0 3px 5px rgba(63,63,63,0.2);
+    border-radius: 10px;
+    color: $SubColor;
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+
+    &:hover{
+        background-color: #f18900;
+    }
+}
+
+.btn-cmn-gene{
+    padding: 20px 0;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 22.5px;
+    transition: all 0.3s ease-in-out;
+    @include sp{
+        padding: 16px 0;
+        font-size: 18px;
+    }
+}
+
+.float-btn{
+    position: fixed;
+    bottom: 38px;
+    right: 93px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+    width: 50px;
+    z-index: 100;
+    @include sp{
+        bottom: 16px;
+        right: 16px;
+    }
+
+    &:hover{
+        opacity: 0.7;
+    }
+}

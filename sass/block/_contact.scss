@@ -1,0 +1,202 @@
+/*
+    contact
+*/
+.contact {
+    padding: 80px 16px;
+    background-image: url(../images/contact_bg.png);
+    background-size: cover;
+    @include sp{
+        padding: 40px 16px;
+    }
+
+    &__head {
+        padding: 61px 0 57px;
+        background-image: url(../images/contact_bg-head.png);
+        background-size: cover;
+        color: $SubColor;
+        text-align: center;
+        @include sp{
+            padding: 28px 16px 38px;
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+        }
+
+        &__ttl {
+            margin-bottom: 11px;
+            @include sp{
+                margin-bottom: 5px;
+            }
+        }
+
+        &__txt{
+            @include sp{
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+    }
+
+    &__body {
+        padding: 60px 90px;
+        background-color: $SubColor;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+        @include sp{
+            padding: 40px 16px;
+        }
+
+        &__row-01 {
+            margin-bottom: 34px;
+            display: flex;
+            @include sp{
+                margin-bottom: 38px;
+                display: block;
+            }
+        }
+
+        &__row-02{
+            margin-bottom: 30px;
+            display: block;
+            @include sp{
+                margin-bottom: 16px;
+            }
+        }
+
+        &__label-01 {
+            position: relative;
+            flex: 0 0 35%;
+            font-size: 22px;
+            @include sp{
+                margin-bottom: 5px;
+                font-size: 16px;
+                display: block;
+            }
+
+            &--caution{
+                padding: 0 12px;
+                position: absolute;
+                top: 7px;
+                left: 140px;
+                background-color: $CautionColor;
+                border-radius: 5px;
+                color: $SubColor;
+                font-size: 16px;
+                @include tab {
+                    left: 100px;
+                }
+                @include sp{
+                    position: relative;
+                    top: 0;
+                    left: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__label-02{
+            margin-bottom: 10px;
+            display: block;
+            font-size: 22px;
+            @include sp{
+                font-size: 16px;
+            }
+        }
+
+        &__select-box{
+            position: relative;
+            max-width: 261px;
+            width: 100%;
+            z-index: 5;
+            @include sp{
+                max-width: 100%;
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top: calc(50% - 5px);
+                right: 10px;
+                margin-top: -2.5px;
+                border-bottom: 3px solid $MainColor;
+                border-right: 3px solid $MainColor;
+                transform: rotate(45deg);
+            }
+        }
+
+        &__select {
+            position: relative;
+            padding: 3px 20px;
+            background-color: transparent;
+            font-size: 18px;
+            max-width: 261px;
+            z-index: 10;
+            @include sp{
+                max-width: 100%;
+            }
+        }
+
+        &__name{
+            padding: 0 12px;
+            border: none;
+            border-bottom: 1px solid $MainColor;
+            font-size: 20px;
+            max-width: 505px;
+            width: 100%;
+            @include sp{
+                padding: 0 12px 6px;
+                font-size: 16px;
+            }
+        }
+
+        &__radio{
+            margin-right: 45px;
+            @include sp{
+                margin-right: 26%;
+            }
+        }
+
+        &__textarea{
+            display: block;
+            width: 100%;
+            @include sp{
+                height: 160px;
+            }
+        }
+
+        &__check{
+            margin-bottom: 30px;
+            @include sp{
+                margin-bottom: 18px;
+            }
+
+            &-in{
+                span{
+                    margin-left: 22px !important;
+                }
+            }
+        }
+
+        &__btn{
+            @include sp{
+                display: block;
+                text-align: center;
+            }
+            &-in{
+                padding: 12px 0;
+                max-width: 174px;
+                width: 100%;
+                @include sp{
+                    padding: 13px 0;
+                    max-width: 121px;
+                }
+            }
+        }
+    }
+}
+
+/*
+    contact end
+*/

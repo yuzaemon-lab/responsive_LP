@@ -1,0 +1,93 @@
+/*
+    qanda
+*/
+.qanda{
+    padding: 77px 16px 46px;
+    background-image: url(../images/qanda_bg.png);
+    background-size: cover;
+    @include clear;
+
+    @include sp{
+        padding: 40px 16px 20px;
+        background-position: 50% 0;
+    }
+
+    &__head{
+        margin-bottom: 80px;
+        text-align: center;
+        @include sp{
+            margin-bottom: 33px;
+        }
+    }
+
+    &__contents{
+        margin-right: 15px;
+        max-width: 616px;
+        float: right;
+        width: 100%;
+        @include sp{
+            margin-right: 0;
+        }
+    }
+
+    &__content{
+        padding: 18px;
+        margin-bottom: 40px;
+        background-color: $SubColor;
+        border-radius: 7px;
+        transition: all 0.3s ease-in-out;
+        @include sp{
+            margin-bottom: 30px;
+        }
+        &:hover{
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(59,105,255,1);
+        }
+
+        &:nth-child(2){
+            .qanda__content__question__icon{
+                margin-top: 10px;
+            }
+        }
+
+        &__question{
+            position: relative;
+            font-weight: bold;
+
+            &__icon{
+                padding-left: 6px;
+                margin-right: 16px;
+                background-color: $AccentColor;
+                border-radius: 100%;
+                color: $SubColor;
+                display: inline-block;
+                height: 26px;
+                vertical-align: top;
+                width: 26px;
+            }
+
+            &__body{
+                display: inline-block;
+            }
+
+            &__btn{
+                position: absolute;
+                top: -3px;
+                right: 0;
+                color: $AccentColor;
+                font-size: 20px;
+            }
+        }
+
+        &__answer{
+            padding: 17px 14px;
+            margin-top: 17px;
+            background-color: rgba(59,105,255,0.2);
+            border-radius: 7px;
+            display: none;
+        }
+    }
+}
+/*
+    qanda end
+*/

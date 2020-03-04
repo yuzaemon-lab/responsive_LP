@@ -1,0 +1,114 @@
+/*
+    comments
+*/
+.comments{
+    position: relative;
+    padding: 0 0 130px 0;
+    background-color: $BgColor;
+    z-index: 3;
+    @include sp{
+            padding: 0 16px;
+            background-color: $MainColor;
+    }
+
+    &__inner{
+        position: relative;
+        display: flex;
+        z-index: 10;
+    }
+
+    &__contents{
+        position: relative;
+        padding: 80px 40px 120px;
+        background-color: $SubColor;
+        box-shadow: 0 0 10px rgba(0,0,0,0.16);
+        max-width: 644px;
+        width: 100%;
+        @include sp{
+            top: -60px;
+            padding: 35px 20px;
+        }
+
+        &__head{
+            margin-bottom: 80px;
+            letter-spacing: 2px;
+            @include sp{
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__content{
+        margin-bottom: 80px;
+        display: flex;
+        @include sp{
+            margin-bottom: 30px;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+        
+
+        &__img{
+            margin-right: 50px;
+            height: auto;
+            flex: 0 0 100px;
+            max-width: 100px;
+            width: 100%;
+            @include sp{
+                margin-right: 24px;
+                max-width: 56px;
+            }
+
+            &-in{
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        &__txt{
+            @include sp{
+                font-size: 14px;
+            }
+        }
+    }
+
+    &__img{
+        position: relative;
+        top: 130px;
+        height: auto;
+        max-width: 537px;
+        width: 100%;
+        @include tab{
+            display: none;
+        }
+        @include sp{
+            display: none;
+        }
+
+        &-in{
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    &__bg{
+        position: absolute;
+        top: 150px;
+        left: 0;
+        background-color: $MainColor;
+        height: 600px;
+        width: 72%;
+        z-index: 5;
+        @include tab{
+            width: 90%;
+        }
+        @include sp{
+            display: none;
+        }
+    }
+}
+/*
+    comments end
+*/

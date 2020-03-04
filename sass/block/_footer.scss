@@ -1,0 +1,103 @@
+/*
+    footer
+*/
+.footer{
+    position: relative;
+    padding: 110px 16px 74px;
+    background-color: $MainColor;
+    color: $FooterColor;
+    @include clear;
+
+    @include sp{
+        padding: 46px 18px 92px;
+    }
+
+    &__left{
+        float: left;
+        @include sp{
+            float: none;
+        }
+    }
+
+    &__sns{
+        margin-bottom: 30px;
+        @include sp{
+            padding: 0 85px;
+            @include clear;
+        }
+
+        &__twitter{
+            margin-right: 20px;
+            color: $FooterColor;
+            font-size: 36px;
+            @include sp{
+            float: left;
+            }
+        }
+
+        &__facebook{
+            color: $FooterColor;
+            font-size: 36px;
+            @include sp{
+                float: right;
+            }
+        }
+    }
+
+    &__list{
+        @include sp{
+            text-align: center;
+        }
+
+        li{
+            margin-bottom: 14px;
+            @include sp{
+                display: inline-block;
+                width: 49%;
+            }
+
+            a{
+                color: $FooterColor;
+                font-size: 18px;
+                @include sp{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &__right{
+        padding-top: 50px;
+        float: right;
+
+        @include sp{
+            padding-top: 32px;
+            float: none;
+        }
+
+        &__contents{
+            text-align: right;
+            @include sp{
+                text-align: center;
+            }
+        }
+    }
+
+    &__logo{
+        margin-right: 10px;
+        margin-bottom: 14px;
+        font-size: 40px;
+        font-weight: normal;
+        @include sp{
+            margin-bottom: 3px;
+            font-size: 32px;
+        }
+    }
+
+    &__copyright{
+        font-size: 12px;
+    }
+}
+/*
+    footer end
+*/

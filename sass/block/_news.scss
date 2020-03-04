@@ -1,0 +1,165 @@
+/*
+    news
+*/
+.news {
+    padding: 130px 93px;
+    background-color: $BgColor;
+    text-align: center;
+    @include sp{
+        padding: 0 16px 21px 16px;
+    }
+
+    &__inner {
+        padding: 60px 49px 50px;
+        background-color: $SubColor;
+        box-shadow: 0 5px 12px rgba(63, 63, 63, 0.2);
+        @include sp{
+            position: relative;
+            top: -39px;
+            padding: 40px 0;
+        }
+    }
+
+    &__head {
+        margin-bottom: 60px;
+        @include sp{
+            margin-bottom: 32px;
+        }
+    }
+
+    &__contents{
+        margin-bottom: 40px;
+    }
+
+    &__article {
+        position: relative;
+        border-top: 1px solid #cecdcd;
+        text-align: left;
+
+        &:last-child {
+            border-bottom: 1px solid #cecdcd;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: calc(50% - 10px);
+            right: 16px;
+            margin-top: -2.5px;
+            border-top: 3px solid $MainColor;
+            border-right: 3px solid $MainColor;
+            transform: rotate(45deg);
+        }
+
+        &__link{
+            padding: 37px 11px;
+            align-items: center;
+            color: $MainColor;
+            display: flex;
+            transition: all 0.3s ease-in-out 0s;
+            z-index: 50;
+            @include sp{
+                padding: 16px 16px 13px;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            &:hover{
+                background-color: rgba(73,115,255,0.1);
+
+                .news__article__category{
+                    background-color: #fff;
+                }
+            }
+        }
+
+        &__day {
+            margin-right: 60px;
+            font-size: 18px;
+            display: block;
+            flex: 0 0 98px;
+            @include tab{
+                margin-right: 40px;
+                font-size: 16px;
+                flex: 0 0 90px;
+            }
+            @include sp{
+                margin-right: 20px;
+                flex: 0 0 76px;
+                font-size: 14px;
+            }
+        }
+
+        &__category {
+            margin-right: 60px;
+            border-radius: 50px;
+            display: block;
+            flex: 0 0 125px;
+            @include tab{
+                flex: 0 0 100px;
+            }
+            @include sp{
+                flex: 0 0 89px;
+            }
+
+            span {
+                border: 2px solid $AccentColor;
+                border-radius: 50px;
+                color: #333333;
+                display: block;
+                text-align: center;
+                @include sp{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &__title {
+            display: block;
+            font-size: 18px;
+            flex: 0 0 60%;
+            max-width: 670px;
+            @include s-pc{
+                flex: 0 0 48%;
+            }
+            @include tab{
+                flex:0 0 40%;
+                font-size: 16px;
+            }
+            @include sp{
+                padding-top: 7px;
+                font-size: 14px;
+                flex: 0 0 90%;
+                max-width: 280px;
+            }
+        }
+    }
+
+    &__btn{
+        &__in{
+            border: 1px solid $MainColor;
+            color: $MainColor;
+            font-weight: bold;
+            display: inline-block;
+            letter-spacing: 5px;
+            transition: all 0.3s ease-in-out;
+            max-width: 248px;
+            width: 100%;
+            @include sp{
+                max-width: 311px;
+            }
+
+            &:hover{
+                background-color: $MainColor;
+                color: $SubColor;
+            }
+        }
+    }
+}
+
+/*
+    news end
+*/

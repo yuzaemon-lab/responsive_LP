@@ -1,0 +1,65 @@
+/*
+    price
+*/
+.price{
+    padding: 77px 30px 131px;
+    background-color: $BgColor;
+    @include sp{
+        padding: 37px 16px 120px;
+    }
+
+    &__head{
+        margin-bottom: 80px;
+        text-align: center;
+        @include sp{
+            margin-bottom: 36px;
+        }
+    }
+
+    &__table{
+        margin-bottom: 24px;
+        width: 100%;
+        @include sp{
+            margin-bottom: 15px;
+        }
+
+        &__head{
+            padding: 13px 0;
+            background-color: $MainColor;
+            border-bottom: 1px solid $BgColor;
+            color: $SubColor;
+            font-size: 20px;
+            text-align: center;
+            width: 30%;
+            @include sp{
+                padding: 15px 0;
+                font-size: 18px;
+            }
+        }
+
+        &__data{
+            padding: 13px 40px;
+            font-size: 20px;
+            font-weight: bold;
+            @include sp{
+                padding: 14px 20px;
+                font-size: 18px;
+            }
+        }
+
+        &__row{
+            &:last-child{
+                .price__table__head{
+                    border-bottom: 1px solid $MainColor;
+                }
+            }
+        }
+    }
+
+    &__caution{
+        font-size: 12px;
+    }
+}
+/*
+    price end
+*/
